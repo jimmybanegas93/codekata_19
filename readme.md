@@ -1,5 +1,5 @@
-### Code Kata 19: Word Chains
-
+# Code Kata 19: Word Chains
+### Author: Miles McGuire
 Javascript solution to Code Kata from Wednesday 14th August, 2013.
 
 Reads the contents of the words file (copy of OS X Lion's /usr/share/dict/words)
@@ -8,3 +8,4 @@ words edit the function call at the end of the file.
 
 This is essentially an A* search of the words file. Read the comments in the file
 for more details!
+
