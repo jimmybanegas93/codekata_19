@@ -30,9 +30,11 @@ var search = function(start, end, predecessors) {
         return countDifferences(word1, end) - countDifferences(word2, end);
     })
     for (var i = 0; i < wordlist.length; i++) {
-        var x = search(wordlist[0], end, predecessors);
+        var x = search(wordlist[i], end, predecessors);
         if (x) return x;
     }
 }
 
-console.log(search("ruby", "code", []));
+console.time("x");
+console.log(search("cat", "dog", []));
+console.timeEnd("x");
