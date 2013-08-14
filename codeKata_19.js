@@ -21,7 +21,7 @@ var countDifferences = function(word1, word2) {
 // it's a nice optimisation.
 var memo = []
 
-var search = function(start, end, predecessors) {
+var _search = function(start, end, predecessors) {
     // Add the current word to the chain.
     predecessors = predecessors.concat(start);
     // Add the current word to the memo.
@@ -72,6 +72,10 @@ var search = function(start, end, predecessors) {
     }
 }
 
+var search = function(start, end) {
+    return _search(start, end, [])
+}
+
 console.time("x");
-console.log(search("cat", "dog", []));
+console.log(search("cat", "dog"));
 console.timeEnd("x");
