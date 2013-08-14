@@ -9,3 +9,5 @@ words edit the function call at the end of the file.
 This is essentially an A* search of the words file. Read the comments in the file
 for more details!
 
+To run:
+    node codeKata_19.js
